@@ -34,7 +34,7 @@ npm install fabric-ca-client
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
     ```bash
-    npm install @akachain/akc-node-sdk
+    npm install @akachain/akc-node-sdk-2.0
     ```
 
 
@@ -42,7 +42,7 @@ npm install fabric-ca-client
 
 ```
 // import sdk
-const akcSdk = require('@akachain/akc-node-sdk');
+const akcSdk = require('@akachain/akc-node-sdk-2.0');
 
 ...
 // invoke example

@@ -46,27 +46,13 @@ const akcSdk = require('@akachain/akc-node-sdk');
 
 ...
 // invoke example
-const invokeResult = await akcSdk.invoke(peerNames, channelName, chaincodeName, fcn, args, orgName, userName);
+const  invokeChaincode(channelName, endorsingPeer, chaincodeName, fcn, args, orgName, userName, artifactFolder);
 
 ```
 
 ### Functions
 | Function | Parameters | Note |
 | --- | --- | --- |
-| `registerUser` | user: { orgname, username, enrollmentSecret (optional), role (optional), affiliation (optional), maxEnrollments (optional), attrs (optional) } | |
-| `enrollUser` | user: { orgname, username } | |
-| `tlsEnroll` | client | |
-| `getClientForOrg` | orgName, userName (optional), isRefresh (optional)| |
-| `getChannel` | orgName, userName (optional), channelName, isRefresh (optional)| |
 | `invoke` | peerNames, channelName, chaincodeName, fcn, args, orgName, userName | |
 | `query` | peerNames, channelName, chaincodeName, fcn, args, orgName, userName | |
-| `getBlockByNumber` | peerName, channelName, blockNumber, orgName, userName | |
-| `getTransactionByID` | peerName, channelName, trxnID, orgName, userName | |
-| `getBlockByHash` | peerName, channelName, hash, orgName, userName | |
-| `getChainInfo` | peerName, channelName, orgName, userName | |
-| `getInstalledChaincodes` | peerName, channelName, type, orgName, userName | |
 | `getLogger` | moduleName | |
-| `crawlBlock` | blockNumberOrHash, option | |
-| `installChaincode` | orgName, request: { chaincodePath, chaincodeId, metadataPath, chaincodeVersion, chaincodeType } | |
-| `initChaincode` | orgName, channelName, request: { chaincodeId, chaincodeVersion, chaincodeType, args } | |
-| `upgradeChaincode` | orgName, channelName, request { chaincodeId, chaincodeVersion, chaincodeType, args } | |
